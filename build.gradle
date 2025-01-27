@@ -30,9 +30,11 @@ dependencies {
 	implementation "org.flywaydb:flyway-database-postgresql:10.17.1"
 	implementation 'org.springframework.boot:spring-boot-starter-graphql'
 	implementation "com.tailrocks.graphql:graphql-datetime-spring-boot-starter:6.0.0"
+
 	implementation "com.google.protobuf:protobuf-java-util:${dependencyManagement.importedProperties['protobuf-java.version']}"
 	implementation 'org.springframework.grpc:spring-grpc-spring-boot-starter'
 	implementation 'io.grpc:grpc-services'
+
 	compileOnly "org.projectlombok:lombok:1.18.34"
 	runtimeOnly 'org.postgresql:postgresql:42.7.2'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
